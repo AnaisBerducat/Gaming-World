@@ -1,0 +1,17 @@
+.idx-img,
+  a {
+    display: block;
+    height: 100%;
+  }
+
+  .idx-imge {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+   
+  .idx-img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }

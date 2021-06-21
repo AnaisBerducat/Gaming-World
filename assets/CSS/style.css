@@ -1,0 +1,1653 @@
+. @font-face {
+    font-family: "Orbitron";
+    src: url("Police/Orbitron.ttf");
+}
+
+html {
+    background-color: white;
+}
+
+
+/*----------------------Haut de Page-----------------------*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 260px;
+    border: 2px black solid;
+}
+
+.banniereP {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-image: url("../Images/banniere.png");
+    background-repeat: repeat-x;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10%px;
+}
+
+.banniereP h3 {
+    /*font-family:*/
+    display: flex;
+    align-items: center;
+    font-family: "Orbitron", 'Courier New', serif;
+    font-size: 3em;
+}
+
+.banniereP h3 span {
+    color: rgb(180, 0, 0);
+}
+
+.mario {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+.kratos {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+.steve {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+.ninja {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+@media (max-width: 930px) {
+    .logo img .banniereP {}
+}
+
+@media (max-width: 670px) {
+    .mario {
+        display: none;
+    }
+}
+
+@media (max-width: 870px) {
+    .kratos {
+        display: none;
+    }
+}
+
+@media (max-width: 1070px) {
+    .steve {
+        display: none;
+    }
+}
+
+@media (max-width: 1270px) {
+    .ninja {
+        display: none;
+    }
+}
+
+@media (max-width: 1525px) {
+    .price {
+        display: none;
+    }
+}
+
+.menuDeroulant {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(31, 31, 31);
+    border: 1px rgb(0, 0, 0) solid;
+}
+
+.menuDeroulant div {
+    margin-top: 2px;
+}
+
+.bouton_accueil {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1.7em;
+}
+
+.bouton_accueil a {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_pc {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 1.7em;
+}
+
+.bouton_pc a {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_pc:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.pc_ {
+    position: relative;
+    display: inline-block;
+}
+
+.liste_pc {
+    display: none;
+    background-color: rgb(31, 31, 31);
+    width: 200px;
+}
+
+.liste_pc a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.pc_:hover .liste_pc {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-checkbox:checked ~ .menu {
+    display: none;
+
+}
+
+/*----------------------------------------------------*/
+
+.bouton_ps4 {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 1.7em;
+}
+
+.bouton_ps4 a {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_ps4:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.ps4_ {
+    position: relative;
+    display: inline-block;
+}
+
+.liste_ps4 {
+    display: none;
+    background-color: rgb(31, 31, 31);
+    width: 200px;
+}
+
+.liste_ps4 a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.ps4_:hover .liste_ps4 {
+    display: block;
+}
+
+
+/*----------------------------------------------------*/
+
+.bouton_xbox {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 1.7em;
+}
+
+.bouton_xbox a {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_xbox:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.xbox_ {
+    position: relative;
+    display: inline-block;
+}
+
+.liste_xbox {
+    display: none;
+    background-color: rgb(31, 31, 31);
+    min-width: 200px;
+}
+
+.liste_xbox a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.xbox_:hover .liste_xbox {
+    display: block;
+}
+
+
+/*----------------------*/
+
+.bouton_nintendo {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 1.7em;
+}
+
+.bouton_nintendo a {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_nintendo:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.nintendo_ {
+    position: relative;
+    display: inline-block;
+}
+
+.liste_nintendo {
+    display: none;
+    background-color: rgb(31, 31, 31);
+    width: 200px;
+}
+
+.liste_nintendo a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nintendo_:hover .liste_nintendo {
+    display: block;
+}
+
+.bouton_contact {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 1px;
+    margin-left: 30px;
+    font-size: 1.7em;
+}
+
+.bouton_contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    margin-left: 200px;
+    font-size: 1em;
+}
+
+.search label {
+    color: white;
+}
+
+.communication {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 1.7em;
+}
+
+.communication a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*-------css de pc.php-------*/
+
+.games-pc {
+    background-color: white;
+    --width_responsive: 1200px;
+}
+
+.game_section {
+    display: flex;
+    justify-content: space-around;
+    border-color: white;
+    padding-top: 1%;
+    max-width: 100%;
+    height: auto;
+}
+
+.game_picture_left {
+    max-width: 60%;
+    height: auto;
+    border-color: white;
+}
+
+.sous_section_imgleft {
+    margin-left: 1%;
+}
+
+.game_picture_right {
+    max-width: 50%;
+    height: auto;
+    margin-left: 1%;
+}
+
+
+/*
+.sous_section_imgright{
+    margin-right: 1%;
+    
+}*/
+
+#pc-background {
+    background-color: #b14bb4;
+}
+
+#xbox-background {
+    background-color: #107c10;
+}
+
+#background_ps4 {
+    background-color: #3537e7;
+}
+
+.title_ps4 {
+    color: #3537e7;
+    font-size: 50px;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nintendo-background {
+    background-color: #e90a0a;
+}
+
+.title {
+    margin-left: 1%;
+    font-size: 50px;
+    text-align: center;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(242, 242, 248);
+}
+
+.games_body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px;
+    color: white;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.title_nvidia {
+    color: rgb(167, 107, 223);
+    font-size: 50px;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.video_section {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video_section iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 1%;
+}
+
+#btn-pc {
+    background: rgb(66, 2, 92);
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 251, 251);
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btn-pc a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn-pc #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btn-pc:hover {
+    background: #e355f0;
+}
+
+#btn-pc:hover #circle {
+    height: 50px;
+    width: 220px;
+    left: 170px;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+}
+
+@media (max-width: 980px) {
+    .game_section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+    }
+    #pc_gamer,
+    #f1-2020,
+    #lol,
+    #xbox_x,
+    #ninja,
+    #nintendo,
+    #mario,
+    #ps_gamer,
+    #god_of_war,
+    #discord,
+    #teamspeack,
+    #contact {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .game_picture_left {
+        min-width: 100%;
+        margin: 1%;
+    }
+    .sous_section_imgleft {
+        margin: 1%;
+        width: 100%;
+    }
+    .game_picture_right {
+        margin: 1%;
+        min-width: 100%;
+    }
+    .sous_section_imgright {
+        margin: 1%;
+        width: 100%;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .games_body {
+        font: 14px;
+    }
+}
+
+
+/*--------------------------------------------*/
+
+
+/*------css de nintendo.php------*/
+
+#btn-nintendo {
+    background: #960707;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 251, 251);
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btn-nintendo a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn-nintendo #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btn-nintendo:hover {
+    background: #ff4a4a;
+}
+
+#btn-nintendo:hover #circle {
+    height: 50px;
+    width: 220px;
+    left: 170px;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+}
+
+
+/*--------------------------------------------*/
+
+
+/*-------css de xbox.php--------*/
+
+.bloc-xbox {
+    display: flex;
+    justify-content: space-around;
+    border-color: white;
+    padding-top: 1%;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.titrexbox {
+    margin-left: 1%;
+    background-color: #107c10;
+    font-size: 50px;
+    color: white;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.xbox-un {
+    width: 60%;
+    height: auto;
+    border-color: white;
+}
+
+.xbox-txtun {
+    margin-left: 1%;
+    background-color: #107c10;
+}
+
+.xbox-txtdeux {
+    margin-right: 1%;
+    background-color: #107c10;
+}
+
+.xbox-trois {
+    height: 50%;
+    width: 50%;
+}
+
+.xboxparagraphe {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px;
+    color: white;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+#btn {
+    background: #222;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btn #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btn:hover {
+    background: #9af00c;
+}
+
+#btn:hover #circle {
+    height: 50px;
+    width: 220px;
+    left: 170px;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+}
+
+
+/*---------------CSS PS4------------------*/
+
+#ps-background {
+    background-image: url("../Images/ps4Back.jpg");
+}
+
+#btn-ps {
+    background: rgb(31, 31, 31);
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 251, 251);
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btn-ps a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+#btn-ps #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+#btn-ps:hover {
+    background: #1100ff;
+}
+
+#btn-ps:hover #circle {
+    height: 50px;
+    width: 220px;
+    left: 170px;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+}
+
+/*-------------------------------*/
+
+
+/*---------------Footer test------------------*/
+
+footer {
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 10px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h4 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h4 span {
+    color: #107c10;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 5;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 8%;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
+
+couleurname {
+    color: #107c10;
+}
+
+orm {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/*-----------contact css-----------------*/
+
+label {
+    padding: 1%;
+}
+
+#msg {
+    width: 100%;
+    height: 100px;
+    font-size: 22px;
+    margin-bottom: 2%;
+    border: 1px solid black;
+}
+
+#lastName,
+#firstName,
+#mail,
+#suggestion {
+    font-size: 22px;
+    margin-bottom: 2%;
+    border: 1px solid black;
+}
+
+.button {
+    font-size: 22px;
+}
+
+.titles {
+    margin-left: 1%;
+    font-size: 50px;
+    text-align: center;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*----------------------TEST BIZARRE------------------------------*/
+
+:root {
+    --offset: 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+header-index {
+    padding: 1rem;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2em;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#btndeux {
+    background: #222;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btndeux #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btndeux:hover {
+    background: #9af00c;
+}
+
+#btndeux:hover #circle {
+    height: 50px;
+    width: 220px;
+    left: 170px;
+    border-radius: 0;
+}
+
+@media (min-width: 40em) {
+    body-index {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+#idx-img,
+a {
+    display: block;
+    height: 100%;
+}
+
+#idx-img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 0;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.grid li {
+    position: relative;
+}
+
+.grid li:hover~li:last-child:after,
+.grid li:last-child:hover:after,
+.grid li:hover~li:last-child:before,
+.grid li:last-child:hover:before {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.grid li:last-child:after,
+.grid li:last-child:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+    clip-path: polygon(var(--offset) var(--offset), var(--offset) calc(100% - var(--offset)), calc(100% - var(--offset)) calc(100% - var(--offset)), calc(100% - var(--offset)) var(--offset));
+    -webkit-clip-path: polygon(var(--offset) var(--offset), var(--offset) calc(100% - var(--offset)), calc(100% - var(--offset)) calc(100% - var(--offset)), calc(100% - var(--offset)) var(--offset));
+    opacity: 0;
+    transition: opacity 1s, transform 1s 1s, background 1s;
+}
+
+.grid li:last-child:after {
+    mix-blend-mode: multiply;
+    background: #aaafc3;
+}
+
+.grid li:last-child:before {
+    backdrop-filter: grayscale(100%) blur(2px);
+    -webkit-backdrop-filter: grayscale(100%) blur(2px);
+}
+
+.grid li:nth-child(1):hover~li:last-child:after {
+    background: #2ab1ce;
+}
+
+.grid li:nth-child(2):hover~li:last-child:after {
+    background: #4267b2;
+}
+
+.grid li:nth-child(3):hover~li:last-child:after {
+    background: #e64786;
+}
+
+.grid li:nth-child(4):hover~li:last-child:after {
+    background: #fd2914;
+}
+
+.grid li:nth-child(5):hover~li:last-child:after {
+    background: #fbb016;
+}
+
+.grid li:nth-child(6):hover~li:last-child:after {
+    background: #6bca6c;
+}
+
+.grid li:nth-child(7):hover~li:last-child:after {
+    background: #173b51;
+}
+
+.grid li:nth-child(8):hover~li:last-child:after {
+    background: #6bca6c;
+}
+
+.grid li:last-child:hover:after {
+    background: #ff6d34;
+}
+
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33.3333333333%);
+}
+
+.grid li:last-child:after,
+.grid li:last-child:before {
+    left: 100%;
+    transform: translate3d(-100%, -100%, 0);
+}
+
+.grid li:nth-child(1):hover~li:last-child:after,
+.grid li:nth-child(1):hover~li:last-child:before {
+    transform: translate3d(-300%, -200%, 0);
+}
+
+.grid li:nth-child(2):hover~li:last-child:after,
+.grid li:nth-child(2):hover~li:last-child:before {
+    transform: translate3d(-200%, -200%, 0);
+}
+
+.grid li:nth-child(3):hover~li:last-child:after,
+.grid li:nth-child(3):hover~li:last-child:before {
+    transform: translate3d(-100%, -200%, 0);
+}
+
+.grid li:nth-child(4):hover~li:last-child:after,
+.grid li:nth-child(4):hover~li:last-child:before {
+    transform: translate3d(-300%, -100%, 0);
+}
+
+.grid li:nth-child(5):hover~li:last-child:after,
+.grid li:nth-child(5):hover~li:last-child:before {
+    transform: translate3d(-200%, -100%, 0);
+}
+
+.grid li:nth-child(6):hover~li:last-child:after,
+.grid li:nth-child(6):hover~li:last-child:before {
+    transform: translate3d(-100%, -100%, 0);
+}
+
+.grid li:nth-child(7):hover~li:last-child:after,
+.grid li:nth-child(7):hover~li:last-child:before {
+    transform: translate3d(-300%, 0%, 0);
+}
+
+.grid li:nth-child(8):hover~li:last-child:after,
+.grid li:nth-child(8):hover~li:last-child:before {
+    transform: translate3d(-200%, 0%, 0);
+}
+
+.grid li:last-child:hover:after,
+.grid li:last-child:hover:before {
+    transform: translate3d(-100%, 0%, 0);
+}
+
+
+/*------------------------MOBILE FAUT PAS TOUCHER---------------------------*/
+
+@media (max-width: 60em) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 25%);
+    }
+    .grid li:last-child:after,
+    .grid li:last-child:before {
+        left: 0%;
+        transform: translate3d(-50%, -150%, 0);
+    }
+    .grid li:nth-child(1):hover~li:last-child:after,
+    .grid li:nth-child(1):hover~li:last-child:before {
+        transform: translate3d(0%, -400%, 0);
+    }
+    .grid li:nth-child(2):hover~li:last-child:after,
+    .grid li:nth-child(2):hover~li:last-child:before {
+        transform: translate3d(100%, -400%, 0);
+    }
+    .grid li:nth-child(3):hover~li:last-child:after,
+    .grid li:nth-child(3):hover~li:last-child:before {
+        transform: translate3d(0%, -300%, 0);
+    }
+    .grid li:nth-child(4):hover~li:last-child:after,
+    .grid li:nth-child(4):hover~li:last-child:before {
+        transform: translate3d(100%, -300%, 0);
+    }
+    .grid li:nth-child(5):hover~li:last-child:after,
+    .grid li:nth-child(5):hover~li:last-child:before {
+        transform: translate3d(0%, -200%, 0);
+    }
+    .grid li:nth-child(6):hover~li:last-child:after,
+    .grid li:nth-child(6):hover~li:last-child:before {
+        transform: translate3d(100%, -200%, 0);
+    }
+    .grid li:nth-child(7):hover~li:last-child:after,
+    .grid li:nth-child(7):hover~li:last-child:before {
+        transform: translate3d(0%, -100%, 0);
+    }
+    .grid li:nth-child(8):hover~li:last-child:after,
+    .grid li:nth-child(8):hover~li:last-child:before {
+        transform: translate3d(100%, -100%, 0);
+    }
+    .grid li:last-child:hover:after,
+    .grid li:last-child:hover:before {
+        transform: translate3d(100%, -100%, 0);
+    }
+     :root {
+        --offset: 0;
+    }
+}
+
+.description {
+    font-family: "Unica One", sans-serif;
+    font-size: 1.25rem;
+    position: absolute;
+    display: block;
+    right: 2rem;
+    left: 2rem;
+    text-align: center;
+    top: 50%;
+    width: 60px;
+    margin: auto;
+    color: white;
+    z-index: 100;
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+    transition: .3s 0s;
+}
+
+li:hover .description {
+    opacity: 1;
+    transition: .6s .3s;
+}
+
+h1 {
+    text-shadow: 0 0 20px #00FFFC, 2px 3px 3px #141414, 0 0 100px #00D4D1;
+    color: #00FFFC;
+    background-color: #ffffff;
+}
+
+
+/*-------------------COMMUNICATION------------------------------------*/
+
+#com-background {
+    background-color: #2a2c30;
+}
+
+
+/*------------PAGE THANKS----------------------------------------*/
+
+.texte_merci {
+    padding: 3%;
+    font-size: 1.25rem;
+    display: grid;
+    justify-content: center;
+}
+
+
+/*----------------------------------------------------*/
+
+
+/*------------PAGE LOGIN----------------------------------------*/
+
+#container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
+/* Bordered form */
+
+#container h1 {
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+/* Full-width inputs */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+
+/*----------------------------------------------------*/
+
+
+/*------------cookie----------------------------------------*/
+
+.cookieConsentContainer {
+    z-index: 999;
+    width: 450px;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 30px;
+    background: #232323;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: none;
+}
+
+.cookieConsentContainer .cookieTitle a {
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 20px;
+    display: block;
+}
+
+.cookieConsentContainer .cookieDesc p {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+.cookieConsentContainer .cookieDesc a {
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.cookieConsentContainer .cookieButton a {
+    display: inline-block;
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 14px;
+    background: #000000;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    text-align: center;
+    transition: background 0.3s;
+}
+<<<<<<< HEAD
+header-index {
+    background-color: black;
+}
+
+
+=======
+>>>>>>> d729d2e6c721cd653efa561727371405ae266ea1
+
+@media (max-width: 980px) {
+    .cookieConsentContainer {
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+}
+
+
+/*----------------------------------------------------*/
+
+
+/*------------cookie----------------------------------------*/
+
+.cookieConsentContainer {
+    z-index: 999;
+    width: 450px;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 30px;
+    background: #232323;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: none;
+}
+
+.cookieConsentContainer .cookieTitle a {
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 20px;
+    display: block;
+}
+
+.cookieConsentContainer .cookieDesc p {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+.cookieConsentContainer .cookieDesc a {
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.cookieConsentContainer .cookieButton a {
+    display: inline-block;
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 14px;
+    background: #000000;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+@media (max-width: 980px) {
+    .cookieConsentContainer {
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+}
+
+
+<<<<<<< HEAD
+}
+
+
+=======
+>>>>>>> d729d2e6c721cd653efa561727371405ae266ea1
+/*----------------------------------------------------*/
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color:black;
+    position: sticky;
+    top: 0px;
+}
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color:white;
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: black;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: white;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+.sous{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    background-color: RGBa(200,200,200,0.8);
+}
+
+@media screen and (min-width: 980px){
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        background-color:white;
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav > div > ul > li > a{
+        color: black;
+    }
+    nav a{
+        border-bottom: 2px solid transparent;
+    }
+    nav a:hover{
+        color: black;
+        border-bottom: 2px solid rgb(132, 233, 17);
+    }
+    .sous{
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+    }
+    nav > div > ul li:hover .sous{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .sous a{
+        border-bottom: none;
+        background-color: white;
+    }
+    .sous a:hover{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
+    }
+    .deroulant > a::after{
+        content:" ▼";
+        font-size: 12px;
+        color: black;
+        
+    }
+}
+
+.conteneur-contenu{
+  margin: 50px 20px;
+  height: 1500px;
+}
